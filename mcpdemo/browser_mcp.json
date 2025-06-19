@@ -1,10 +1,11 @@
 {
-  "mcpServers": {
-    "playwright": {
-      "command": "npx",
-      "args": [
-        "@playwright/mcp@latest"
-      ]
+    "mcpServers": {
+      "playwright": {
+        "command": "npx",
+        "args": [
+          "@playwright/mcp@latest"
+        ]
+      }
     },
     "airbnb": {
       "command": "npx",
@@ -19,6 +20,14 @@
         "-y",
         "duckduckgo-mcp-server"
       ]
-    }
-  }
+    },
+    "arxiv-mcp-server": {
+          "command": "uv",
+          "args": [
+              "tool",
+              "run",
+              "arxiv-mcp-server",
+              "--storage-path", "/home/Deepak/mcpdemo/paper/storage"
+          ]
+      }
 }
